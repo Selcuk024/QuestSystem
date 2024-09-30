@@ -11,7 +11,7 @@ namespace QuestSystem
         public Random random = new Random();
 
         int id;
-        string questCat
+        string questCat;
         string description;
         bool isCompleted;
         public Quests(int id, string questCat, string description, bool isCompleted)
@@ -40,7 +40,7 @@ namespace QuestSystem
         }
         public override string ToString()
         {
-            return description;
+            return $"Category: {questCat} Description: {description}";
         }
 
     }

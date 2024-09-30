@@ -25,7 +25,9 @@
                 }
                 else if (answer == "kill")
                 {
-                    string quest = questGiver.getKillQuest();
+                    questGiver.getKillQuest();
+                    questGiver.giveQuest(player);
+                        player.showActiveQuests();
                     player.chosenAQuest = true;
                 }
                 else if (answer == "help")
